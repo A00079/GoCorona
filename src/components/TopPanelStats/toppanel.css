@@ -1,0 +1,185 @@
+.toppanel{
+    position: fixed;
+    top: 80px;
+    width: 75%;
+    height: 75px;
+    right: 13%;
+    border: 3px solid #1e73e8;
+}
+.Badge{
+    position: fixed;
+    top: 60px;
+    left: 12%;
+    font-size: 12px;
+    background:  #1e73e8;
+    color: #fff;
+    width: 85px;
+    height: 22px;
+    border-radius: 2px;
+}
+.cardContent{
+    color: black;
+    background: rgba(25,22,156,-179.87451);
+}
+.card-main-text{
+    color: #343a40;
+    font-family: inherit;
+    font-size: 1.3vw!important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.toppanellist{
+    list-style: none;
+}
+.toppanellist > span{
+    position: absolute;
+    left: 20px;
+    font-size: 1vw;
+    font-weight: bold;
+    background: #1e73e8;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+.ToPalist2item{
+    position: absolute;
+    top: 6%;
+    left: 13%;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.ToPchilditem{
+    display: block;
+    padding-top: 3px;
+}
+.TopPholding{
+    padding-right: 70px;
+    font-size: 1.1vw;
+    color: deepskyblue;
+}
+.TopPindus{
+    font-size: 1.1vw;
+    color: deepskyblue;
+}
+.ToPalist3item {
+    position: absolute;
+    top: 6%;
+    left: 36%;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.ToPalist4item{
+    position: absolute;
+    top: 6%;
+    left: 54%;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.ToPalist5item{
+    position: absolute;
+    top: 6%;
+    left: 66%;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.ToPalist6item{
+    position: absolute;
+    top: 6%;
+    left: 77%;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.ToPalist7item{
+    position: absolute;
+    top: 30%;
+    left: 88%;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.ToPalist3item > ul{
+    list-style: none;
+    border-left: 2px solid yellow;
+    margin-left: 10px;
+    padding: 0px;
+    padding-left: 15px;
+}
+.ToPalist4item > ul{
+    list-style: none;
+    border-left: 2px solid deepskyblue;
+    margin-left: 10px;
+    padding: 0px;
+    padding-left: 15px;
+}
+.ToPalist5item > ul{
+    list-style: none;
+    border-left: 2px solid lightcoral;
+    margin-left: 10px;
+    padding: 0px;
+    padding-left: 15px;
+}
+.ToPalist6item > ul{
+    list-style: none;
+    border-left: 2px solid orange;
+    margin-left: 10px;
+    padding: 0px;
+    padding-left: 15px;
+}
+.Topitem3Child{
+    padding-right: 83px !important;
+    font-size: 1.3vw;
+}
+.Topitem4Child{
+    padding-right: 83px !important;
+    font-size: 1.3vw;
+    color: darkgray;
+}
+.TP3list{
+    font-size: 1.1vw;
+    padding-right: 63px;
+    color: #ccc;
+}
+.TP4list{
+    font-size: 1.1vw;
+    padding-right: 67px;
+    color: #ccc;
+}
+.listStyle{
+    list-style: none;
+}
+.extraClass{
+    padding-right: 125px !important;
+}
+.extl1{
+    padding-right: 75px;
+    color: cornflowerblue;
+}
+.extl2{
+    padding-right: 79px;padding-right: 81px;
+    color: orangered;
+}
+.extl3{
+    padding-right: 81px;
+    color: magenta;
+}
+.extl4{
+    padding-right: 82px;
+    color: mediumseagreen;
+}
+.Toplastbtn{
+    padding: 4px 25px;
+    background: none;
+    border: 1px solid orange;
+}
+.tp1color{
+    color: crimson;
+}
+.tp2color{
+    color: coral;
+}
+.tp3color{
+    color: darkcyan;
+}
+.tp4color{
+    color: brown;
+}
