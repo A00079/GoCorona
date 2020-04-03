@@ -16,7 +16,9 @@ class appNavbar extends React.Component{
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse navLinks" id="navbarSupportedContent-4">
-                    {/* <ul class="navbar-nav ml-auto">
+                    {/*
+                    Nav Links 
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#"><i class="fa fa-heart"></i> Follow <span class="sr-only">(current)</span></a>
                         </li>
