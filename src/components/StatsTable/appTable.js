@@ -14,22 +14,22 @@ class appTable extends React.Component {
         return (
             <div>
                 <span className="tableToptext">COMPILED FROM STATE GOVT. NUMBERS </span>
-                <section className="MainTable">
-                    <div class="tbl-header">
-                        <table cellpadding="0" cellspacing="0" border="0">
+                <section className="MainTablee">
+                    <div className="tbl-header">
+                        <table cellPadding="0" cellSpacing="0" border="0">
                             <thead>
                                 <tr>
-                                    <th>STATE</th>
-                                    <th>CONFIRMED</th>
-                                    <th>ACTIVE</th>
-                                    <th>RECOVERED</th>
-                                    <th>DECEASED</th>
+                                    <th className="HeadColor">STATE</th>
+                                    <th className="HeadColor">CONFIRMED</th>
+                                    <th className="HeadColor">ACTIVE</th>
+                                    <th className="HeadColor">RECOVERED</th>
+                                    <th className="HeadColor">DECEASED</th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
-                    <div class="tbl-content">
-                        <table cellpadding="0" cellspacing="0" border="0">
+                    <div className="tbl-content">
+                        <table cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
                                 <TableRow />
                             </tbody>

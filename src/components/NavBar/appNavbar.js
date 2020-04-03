@@ -10,12 +10,12 @@ class appNavbar extends React.Component{
     }
     render(){
         return(
-            <nav class="mb-4 navbar navbar-expand-lg navbar-dark unique-color-dark">
-                <a class="navbar-brand" href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav className="mb-4 navbar navbar-expand-lg navbar-dark unique-color-dark">
+                <a className="navbar-brand" href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="" /></a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navLinks" id="navbarSupportedContent-4">
+                <div className="collapse navbar-collapse navLinks" id="navbarSupportedContent-4">
                     {/*
                     Nav Links 
                     <ul class="navbar-nav ml-auto">

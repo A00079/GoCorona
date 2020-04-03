@@ -1,0 +1,35 @@
+.text{
+    color: #000;
+    padding-right: 14px;
+}
+.BadgeUpdate{
+    position: absolute;
+    top: 55px;
+    right: 5%;
+}
+.badgeText{
+    display: flex;
+    list-style: none;
+}
+.badgeFontSZ{
+    font-size: 1.3vw;
+}
+.oddText{
+    font-size: 1.1vw;
+    padding-left: 7px;
+}
+.extTxt{
+    padding: 5px;
+    background: #d0ecfd;
+    border-radius: 3px;
+    color: dodgerblue;
+    font-weight: bolder;
+}
+.extTxt2{
+    background: rgba(32,26,162,.12549);
+    padding: 5px 18px 5px 18px;
+    border-radius: 3px;
+    font-weight: bolder;
+    color: #9370DB;
+}
+

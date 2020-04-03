@@ -1,5 +1,7 @@
 import React from 'react';
 import './toppanel.css';
+import AppUpdated from '../AppUpdated/appUpdated.js';
+
 
 class Toppanel extends React.Component {
     constructor() {
@@ -11,6 +13,7 @@ class Toppanel extends React.Component {
     render() {
         return (
             <div>
+                <AppUpdated />
                 <span className="Badge">Recomended</span>
                 <div className="toppanel card" >
                     <div className="card-body cardContent">

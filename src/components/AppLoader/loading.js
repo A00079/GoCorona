@@ -16,7 +16,7 @@ class loading extends React.Component {
     render() {
         return (
             <div>
-                <ReactLoading type={"bars"} color={"white"} />
+                <ReactLoading type={"bars"} color={"black"} />
             </div>
         )
     }
