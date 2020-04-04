@@ -11,7 +11,6 @@ class tableRow extends React.Component {
         }
     }
     MoreDetails(){
-        console.log('More Details...')
         // this.props.fetchApi('https://api.covid19india.org/data.json');
         if(this.state.moreDetailsFlag == false){
             this.setState({ moreDetailsFlag : true})
