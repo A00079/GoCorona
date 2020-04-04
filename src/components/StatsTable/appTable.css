@@ -167,4 +167,21 @@ h1{
   .extPD5{
     padding-left: 20px;
   }
+  .HeatMap{
+    position: absolute;
+    left: 326%;
+  }
+  .HeatMapModal{
+    z-index: 9999;
+    position: absolute;
+    top: 32%;
+    width: 90%;
+    left: 5%;
+  }
+  .show{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
  

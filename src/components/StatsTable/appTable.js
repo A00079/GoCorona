@@ -1,19 +1,37 @@
 import React from 'react';
 import './appTable.css';
 import TableRow from '../TableRow/tableRow.js';
+import HeatMap from '../GraphsComponent/HeatMapChart/HeatmapChart.js';
 
 class appTable extends React.Component {
     constructor() {
         super();
         this.state = {
-
+            showHeatMap : false
         }
+    }
+    ShowHeatMap(){
+        if(!this.state.showHeatMap){
+            this.setState({ showHeatMap : true})
+            let BtnText = document.querySelector("#root > div > header > div:nth-child(2) > div > div > span > button");
+            BtnText.innerText = "Hide Heat Map";
+        }else{
+            this.setState({ showHeatMap : false})
+            let BtnText = document.querySelector("#root > div > header > div:nth-child(2) > div > div > span > button");
+            BtnText.innerText = "View Heat Map";
+        }
+        
     }
     render() {
         return (
             <div>
-                <span className="tableToptext">COMPILED FROM STATE GOVT. NUMBERS </span>
-                
+                <span className="tableToptext">COMPILED FROM STATE GOVT. NUMBERS 
+                <button className="HeatMap" onClick={this.ShowHeatMap.bind(this)}>View Heat Map</button> </span>
+                <div className={(this.state.showHeatMap)?"card HeatMapModal show" : "hide"  }>
+                    <div className="card-body">
+                        <HeatMap />
+                    </div>
+                </div>
                 <section className="MainTablee">
                     <div className="tbl-header">
                         <table cellPadding="0" cellSpacing="0" border="0">
