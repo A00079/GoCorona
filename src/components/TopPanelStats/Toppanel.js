@@ -1,6 +1,9 @@
 import React from 'react';
 import './toppanel.css';
 import AppUpdated from '../AppUpdated/appUpdated.js';
+import Bar from '../GraphsComponent/BarChart/Bar.js';
+import Donut from '../GraphsComponent/DonutChat/Donut.js';
+
 
 
 class Toppanel extends React.Component {
@@ -22,6 +25,7 @@ class Toppanel extends React.Component {
     render() {
         return (
             <div>
+                
                 <AppUpdated />
                 <span className="Badge">Recent Feeds</span>
                 <div className="toppanel card" >
@@ -79,6 +83,16 @@ class Toppanel extends React.Component {
                                 <div className="ToPalist7item">
                                     <button className="Toplastbtn" title="Download PDF">GET REPORT</button>
                                 </div>
+                            </li>
+                            <li className="listStyle">
+                            <div className="Graph">
+                                <Bar />
+                            </div>
+                            </li>
+                            <li className="listStyle">
+                            <div className="DonutGraph">
+                                <Donut />
+                            </div>
                             </li>
                         </ul>
                     </div>

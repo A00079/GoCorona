@@ -58,6 +58,7 @@ class tableRow extends React.Component {
                     <td className="extActive">1.38</td>
                     <td className="extRecovered"><span>+2.01</span></td>
                     <td className="text-danger extDeceased"><span>+2.01%</span></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
                 </tr>
                 <tr>
                     <td className="text-danger">
@@ -70,6 +71,7 @@ class tableRow extends React.Component {
                     <td className="extActive">1.38</td>
                     <td className="extRecovered"><span>+2.01</span></td>
                     <td className="text-danger extDeceased"><span>+2.01%</span></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
                 </tr>
                 <tr>
                     <td className="text-danger">
@@ -82,6 +84,7 @@ class tableRow extends React.Component {
                     <td className="extActive">1.38</td>
                     <td className="extRecovered"><span>+2.01</span></td>
                     <td className="text-danger extDeceased"><span>+2.01%</span></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
                 </tr>
                 <tr>
                     <td className="text-danger">
@@ -94,6 +97,7 @@ class tableRow extends React.Component {
                     <td className="extActive">1.38</td>
                     <td className="extRecovered"><span>+2.01</span></td>
                     <td className="text-danger extDeceased"><span>+2.01%</span></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
                 </tr>
                 <tr>
                     <td className="text-danger">
@@ -106,6 +110,7 @@ class tableRow extends React.Component {
                     <td className="extActive">1.38</td>
                     <td className="extRecovered"><span>+2.01</span></td>
                     <td className="text-danger extDeceased"><span>+2.01%</span></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
                 </tr>
             </React.Fragment>
         )

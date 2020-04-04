@@ -45,8 +45,9 @@
     list-style: none;
 }
 .toppanellist > span{
-    position: absolute;
-    left: 20px;
+    position: fixed;
+    left: 144px;
+    top: 104px;
     font-size: 1vw;
     font-weight: bold;
     background: #1e73e8;
@@ -200,4 +201,16 @@
 }
 .tp4color{
     color: brown;
+}
+.Graph{
+    position: relative;
+    left: 80%;
+    bottom: 1%;
+    margin-top: 120px;
+}
+.DonutGraph{
+    position: relative;
+    left: 80%;
+    bottom: 1%;
+    margin-top: -26px;
 }

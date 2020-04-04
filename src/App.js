@@ -6,9 +6,6 @@ import Navbar from "../src/components/NavBar/appNavbar.js";
 import Toppanel from "../src/components/TopPanelStats/Toppanel.js";
 
 
-
-
-
 class App extends React.Component {
   constructor() {
     super();

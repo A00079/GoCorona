@@ -2,7 +2,6 @@ import React from 'react';
 import './appTable.css';
 import TableRow from '../TableRow/tableRow.js';
 
-
 class appTable extends React.Component {
     constructor() {
         super();
@@ -14,6 +13,7 @@ class appTable extends React.Component {
         return (
             <div>
                 <span className="tableToptext">COMPILED FROM STATE GOVT. NUMBERS </span>
+                
                 <section className="MainTablee">
                     <div className="tbl-header">
                         <table cellPadding="0" cellSpacing="0" border="0">
