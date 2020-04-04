@@ -50,7 +50,9 @@ class appTable extends React.Component {
                     <div className="tbl-content">
                         <table cellPadding="0" cellSpacing="0" border="0">
                             <tbody>
+                                
                                 <TableRow />
+                                
                             </tbody>
                         </table>
                     </div>

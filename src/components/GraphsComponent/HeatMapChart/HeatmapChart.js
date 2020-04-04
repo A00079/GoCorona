@@ -86,7 +86,6 @@ class HeatMap extends React.Component{
         }
     }
     generateData(count, yrange) {
-        console.log("Calling HeatMap...")
         var i = 0;
         var series = [];
         while (i < count) {
