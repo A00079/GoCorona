@@ -195,4 +195,61 @@ tbody tr:hover{
   -moz-box-shadow: 0 2px 38px rgba(0,0,0,0.2);
   cursor: pointer;
 }
-
+.extShiftleft{
+  margin-left: 55px;
+  color: #9BA6B1;
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.extConfirm{
+  float: left;
+  margin-left: 97px;
+}
+.extConfirm > span{
+  color: #6558BB;
+  font-weight: 600;
+  background: #FFF49A;
+  padding: 5px 15px;
+  border-radius: 3px;
+  line-height: 4;
+}
+.RowCount{
+  background: #1e73e8;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+.extDeceased{
+  float: right;
+  margin-right: 6px;
+}
+.extRecovered{
+  text-align: end;
+}
+.extDeceased > span {
+  background: #F8D4D6;
+  padding: 8px 15px;
+  border-radius: 3px;
+  line-height: 4;
+}
+.extRecovered > span{
+  background: #DAE9B0;
+  padding: 8px 15px;
+  border-radius: 3px;
+  line-height: 3.5;
+  color: #91B454;
+  font-weight: 700;
+}
+.extActive{
+  /* text-align: end; */
+  color: #0000F7;
+  font-weight: 700;
+  padding-left: 84px;
+}
+.moreinfo{
+  padding-left: 25px;
+}
+/* tr:nth-child(even) {background: #000}
+tr:nth-child(odd) {background: #FFF} */

@@ -1,78 +1,111 @@
 import React from 'react';
 import './tableRow.css';
+import MoreDetails from '../CountryDetails/MoreDetails.js';
 
 class tableRow extends React.Component {
     constructor() {
         super();
         this.state = {
-
+            moreDetailsFlag: false
+        }
+    }
+    MoreDetails(){
+        console.log('More Details...')
+        if(this.state.moreDetailsFlag == false){
+            this.setState({ moreDetailsFlag : true})
+        }else{
+            this.setState({ moreDetailsFlag : false})
         }
     }
     render() {
         return (
             <React.Fragment>
+                <MoreDetails showDetails={this.state.moreDetailsFlag}/>
                 <tr>
-                    <td className="text-danger">AA</td>
-                    <td className="text-danger">AUSTRALIAN COMPANY </td>
-                    <td className="text-danger">$1.38</td>
-                    <td className="text-danger">+2.01</td>
-                    <td className="text-danger">-0.36%</td>
+                    <td className="text-danger">
+                        <div>
+                            <big className="RowCount">1</big>
+                            <span className="extShiftleft">China</span>
+                        </div>
+                    </td>
+                    <td className="extConfirm"><span>+2.01</span></td>
+                    <td className="extActive">1.38</td>
+                    <td className="extRecovered"><span>+2.01</span></td>
+                    <td className="text-danger extDeceased"><span>-0.36%</span></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
                 </tr>
                 <tr>
-                    <td className="text-danger">AAD</td>
-                    <td className="text-danger">AUSENCO</td>
-                    <td className="text-danger">$2.38</td>
-                    <td className="text-danger">-0.01</td>
-                    <td className="text-danger">-1.36%</td>
+                    <td className="text-danger">
+                        <div>
+                            <big className="RowCount">2</big>
+                            <span className="extShiftleft">ADELAIDE</span>
+                        </div>
+                    </td>
+                    <td className="extConfirm"><span>+2.01</span></td>
+                    <td className="extActive">1.38</td>
+                    <td className="extRecovered"><span>+2.01</span></td>
+                    <td className="text-danger extDeceased"><span>+2.01%</span></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
                 </tr>
                 <tr>
-                    <td className="text-danger">AAX</td>
-                    <td className="text-danger">ADELAIDE</td>
-                    <td className="text-danger">$3.22</td>
-                    <td className="text-danger">+0.01</td>
-                    <td className="text-danger">+1.36%</td>
+                    <td className="text-danger">
+                        <div>
+                            <big className="RowCount">3</big>
+                            <span className="extShiftleft">ADELAIDE</span>
+                        </div>
+                    </td>
+                    <td className="extConfirm"><span>+2.01</span></td>
+                    <td className="extActive">1.38</td>
+                    <td className="extRecovered"><span>+2.01</span></td>
+                    <td className="text-danger extDeceased"><span>+2.01%</span></td>
                 </tr>
                 <tr>
-                    <td className="text-danger">XXD</td>
-                    <td className="text-danger">ADITYA BIRLA</td>
-                    <td className="text-danger">$1.02</td>
-                    <td className="text-danger">-1.01</td>
-                    <td className="text-danger">+2.36%</td>
+                    <td className="text-danger">
+                        <div>
+                            <big className="RowCount">4</big>
+                            <span className="extShiftleft">ADELAIDE</span>
+                        </div>
+                    </td>
+                    <td className="extConfirm"><span>+2.01</span></td>
+                    <td className="extActive">1.38</td>
+                    <td className="extRecovered"><span>+2.01</span></td>
+                    <td className="text-danger extDeceased"><span>+2.01%</span></td>
                 </tr>
                 <tr>
-                    <td className="text-danger">AAC</td>
-                    <td className="text-danger">AUSTRALIAN COMPANY </td>
-                    <td className="text-danger">$1.38</td>
-                    <td className="text-danger">+2.01</td>
-                    <td className="text-danger">-0.36%</td>
+                    <td className="text-danger">
+                        <div>
+                            <big className="RowCount">5</big>
+                            <span className="extShiftleft">ADELAIDE</span>
+                        </div>
+                    </td>
+                    <td className="extConfirm"><span>+2.01</span></td>
+                    <td className="extActive">1.38</td>
+                    <td className="extRecovered"><span>+2.01</span></td>
+                    <td className="text-danger extDeceased"><span>+2.01%</span></td>
                 </tr>
                 <tr>
-                    <td className="text-danger">AAD</td>
-                    <td className="text-danger">AUSENCO</td>
-                    <td className="text-danger">$2.38</td>
-                    <td className="text-danger">-0.01</td>
-                    <td className="text-danger">-1.36%</td>
+                    <td className="text-danger">
+                        <div>
+                            <big className="RowCount">6</big>
+                            <span className="extShiftleft">ADELAIDE</span>
+                        </div>
+                    </td>
+                    <td className="extConfirm"><span>+2.01</span></td>
+                    <td className="extActive">1.38</td>
+                    <td className="extRecovered"><span>+2.01</span></td>
+                    <td className="text-danger extDeceased"><span>+2.01%</span></td>
                 </tr>
                 <tr>
-                    <td className="text-danger">AAX</td>
-                    <td className="text-danger">ADELAIDE</td>
-                    <td className="text-danger">$3.22</td>
-                    <td className="text-danger">+0.01</td>
-                    <td className="text-danger">+1.36%</td>
-                </tr>
-                <tr>
-                    <td className="text-danger">XXD</td>
-                    <td className="text-danger">ADITYA BIRLA</td>
-                    <td className="text-danger">$1.02</td>
-                    <td className="text-danger">-1.01</td>
-                    <td className="text-danger">+2.36%</td>
-                </tr>
-                <tr>
-                    <td className="text-danger">XXD</td>
-                    <td className="text-danger">ADITYA BIRLA</td>
-                    <td className="text-danger">$1.02</td>
-                    <td className="text-danger">-1.01</td>
-                    <td className="text-danger">+2.36%</td>
+                    <td className="text-danger">
+                        <div>
+                            <big className="RowCount">7</big>
+                            <span className="extShiftleft">ADELAIDE</span>
+                        </div>
+                    </td>
+                    <td className="extConfirm"><span>+2.01</span></td>
+                    <td className="extActive">1.38</td>
+                    <td className="extRecovered"><span>+2.01</span></td>
+                    <td className="text-danger extDeceased"><span>+2.01%</span></td>
                 </tr>
             </React.Fragment>
         )

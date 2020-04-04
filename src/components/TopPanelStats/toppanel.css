@@ -1,3 +1,16 @@
+.toppanel { 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+  } 
+  @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+  } 
 .toppanel{
     position: fixed;
     top: 80px;
@@ -50,16 +63,21 @@
 }
 .ToPchilditem{
     display: block;
-    padding-top: 3px;
+    border-radius: 3px;
+    background: rgba(32,26,162,.12549);
+    padding: 7px 8px 7px 8px;
 }
 .TopPholding{
     padding-right: 70px;
     font-size: 1.1vw;
-    color: deepskyblue;
+    color: #7575dd;
+    font-weight: bolder;
 }
 .TopPindus{
     font-size: 1.1vw;
     color: deepskyblue;
+    color: #7575dd;
+    font-weight: bolder;
 }
 .ToPalist3item {
     position: absolute;
@@ -91,9 +109,9 @@
 }
 .ToPalist7item{
     position: absolute;
-    top: 30%;
-    left: 88%;
-    font-size: 1.2vw;
+    top: 25%;
+    left: 87%;
+    font-size: 0.9vw;
     font-weight: 400;
 }
 
@@ -167,7 +185,7 @@
     color: mediumseagreen;
 }
 .Toplastbtn{
-    padding: 4px 25px;
+    padding: 9px 16px;
     background: none;
     border: 1px solid orange;
 }

@@ -7,31 +7,40 @@ class Toppanel extends React.Component {
     constructor() {
         super();
         this.state = {
+            todayDate : ''
 
         }
+    }
+    componentWillMount() {
+        var d = new Date();
+        var date = d.getDate();
+        var month = d.getMonth() + 1; 
+        var year = d.getFullYear();
+        var dateStr = date + "-" + month + "-" + year;
+        this.setState({todayDate : dateStr})
     }
     render() {
         return (
             <div>
                 <AppUpdated />
-                <span className="Badge">Recomended</span>
+                <span className="Badge">Recent Feeds</span>
                 <div className="toppanel card" >
                     <div className="card-body cardContent">
                         <ul>
                             <li className="toppanellist">
-                                <span>31-03-2020</span>
+                                <span>{this.state.todayDate}</span>
                             </li>
                             <li className="toppanellist">
                                 <div className="ToPalist2item">
                                     <span className="card-main-text">INDIA COVID-19 TRACKER</span>
                                     <div className="ToPchilditem">
-                                    <span className="TopPholding">Holdings</span>
-                                    <span className="TopPindus">industries</span>
+                                        <span className="TopPholding">Holdings</span>
+                                        <span className="TopPindus">industries</span>
                                     </div>
                                 </div>
                             </li>
                             <li className="listStyle">
-                            <div className="ToPalist3item">
+                                <div className="ToPalist3item">
                                     <ul className="listStyle">
                                         <li className="TP3list extl1">About to Expand</li>
                                         <li className="Topitem3Child extraClass tp1color"> + 567</li>
@@ -40,7 +49,7 @@ class Toppanel extends React.Component {
                                 </div>
                             </li>
                             <li className="listStyle">
-                            <div className="ToPalist4item">
+                                <div className="ToPalist4item">
                                     <ul className="listStyle">
                                         <li className="TP3list extl2">Expired</li>
                                         <li className="Topitem3Child tp2color"> + 567</li>
@@ -49,7 +58,7 @@ class Toppanel extends React.Component {
                                 </div>
                             </li>
                             <li className="listStyle">
-                            <div className="ToPalist5item">
+                                <div className="ToPalist5item">
                                     <ul className="listStyle">
                                         <li className="TP4list extl3">Missed</li>
                                         <li className="Topitem3Child tp3color"> + 567</li>
@@ -58,7 +67,7 @@ class Toppanel extends React.Component {
                                 </div>
                             </li>
                             <li className="listStyle">
-                            <div className="ToPalist6item">
+                                <div className="ToPalist6item">
                                     <ul className="listStyle">
                                         <li className="TP4list extl4">Missed</li>
                                         <li className="Topitem3Child tp4color"> + 567</li>
@@ -67,8 +76,8 @@ class Toppanel extends React.Component {
                                 </div>
                             </li>
                             <li className="listStyle">
-                            <div className="ToPalist7item">
-                                    <button className="Toplastbtn">Risk</button>
+                                <div className="ToPalist7item">
+                                    <button className="Toplastbtn" title="Download PDF">GET REPORT</button>
                                 </div>
                             </li>
                         </ul>

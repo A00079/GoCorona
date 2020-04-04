@@ -19,11 +19,12 @@ class appTable extends React.Component {
                         <table cellPadding="0" cellSpacing="0" border="0">
                             <thead>
                                 <tr>
-                                    <th className="HeadColor">STATE</th>
-                                    <th className="HeadColor">CONFIRMED</th>
-                                    <th className="HeadColor">ACTIVE</th>
-                                    <th className="HeadColor">RECOVERED</th>
-                                    <th className="HeadColor">DECEASED</th>
+                                    <th className="HeadColor extPD">STATE</th>
+                                    <th className="HeadColor extPD2">CONFIRMED</th>
+                                    <th className="HeadColor extPD3">ACTIVE</th>
+                                    <th className="HeadColor extPD4">RECOVERED</th>
+                                    <th className="HeadColor extPD5">DECEASED</th>
+                                    <th className="HeadColor extPD5"></th>
                                 </tr>
                             </thead>
                         </table>
