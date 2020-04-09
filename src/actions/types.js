@@ -1,0 +1,2 @@
+export const FETCH_ROWS = 'FETCH_ROWS';
+export const FETCH_MORE_ROW_DETAILS = 'FETCH_MORE_ROW_DETAILS';

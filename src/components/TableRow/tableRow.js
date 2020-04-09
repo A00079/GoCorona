@@ -2,6 +2,9 @@ import React from 'react';
 import './tableRow.css';
 import MoreDetails from '../CountryDetails/MoreDetails.js';
 import { connect } from 'react-redux';
+import { fetchTableRows } from '../../actions/tablerowAction.js';
+import { TableRowMoreDetails } from '../../actions/TableRowMoreDetails.js';
+
 
 class tableRow extends React.Component {
     constructor() {
@@ -10,16 +13,20 @@ class tableRow extends React.Component {
             moreDetailsFlag: false
         }
     }
-    MoreDetails(){
-        // this.props.fetchApi('https://api.covid19india.org/data.json');
+    MoreDetails(incrementor){
+        this.props.TableRowMoreDetails(incrementor);
         if(this.state.moreDetailsFlag == false){
             this.setState({ moreDetailsFlag : true})
         }else{
             this.setState({ moreDetailsFlag : false})
         }
     }
+    componentWillMount(){
+        this.props.fetchTableRows();
+    }
     render() {
-        console.log("First Second On React",this.props)
+        // console.log("First Second On React",this.props.response)
+        console.log("Second On React",this.props.moreDetails)
         return (
             <React.Fragment>
                 <tr>
@@ -33,7 +40,7 @@ class tableRow extends React.Component {
                     <td className="extActive">1.38</td>
                     <td className="extRecovered"><span>+2.01</span></td>
                     <td className="text-danger extDeceased"><span>-0.36%</span></td>
-                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this,2)}>More Info</button></td>
                 </tr>
                 <tr>
                     <td className="text-danger">
@@ -46,7 +53,7 @@ class tableRow extends React.Component {
                     <td className="extActive">1.38</td>
                     <td className="extRecovered"><span>+2.01</span></td>
                     <td className="text-danger extDeceased"><span>+2.01%</span></td>
-                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this)}>More Info</button></td>
+                    <td className="text-danger moreinfo"><button title="Click for More Info" onClick={this.MoreDetails.bind(this,10)}>More Info</button></td>
                 </tr>
                 <tr>
                     <td className="text-danger">
@@ -125,16 +132,8 @@ class tableRow extends React.Component {
 
 const mapStateToProps = (state) =>{
     return {
-        response : state.response
+        response : state.response.response,
+        moreDetails: state.rowdetails.moreDetails
     }
 }
-
-const mapDispatchToProps = (dispatch) =>{
-    return {
-        fetchApi: (url) =>{
-            dispatch({ type:'FETCH_DATA', url: url})
-        }
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(tableRow);
+export default connect(mapStateToProps, { fetchTableRows, TableRowMoreDetails })(tableRow);
